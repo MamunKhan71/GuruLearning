@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ostad Clone </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- tailwind & daisy-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .font-hind {
+            font-family: "Hind Siliguri", sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        ostadPrimary: '#ffc000',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-hind bg-[#f9f9fa] h-full">
+    <header class="container mx-auto space-y-8">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Item 1</a></li>
+                            <li><a>Item 1</a></li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-3xl"><span><img class="w-10" src="./images/3270465.png" alt=""></span>
+                        গুরু লার্নিং</a>
+                </div>
+                <div class="navbar-center hidden lg:flex font-semibold">
+                    <ul class="menu menu-horizontal px-1 text-base">
+                        <li><a>আমাদের সম্পর্কে</a></li>
+                        <li>
+                            <details>
+                                <summary>ডাউনলোড</summary>
+                                <ul class="p-2">
+                                    <li><a>প্লে স্টোর</a></li>
+                                    <li><a>অ্যাপ স্টোর</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li><a>ফ্রিতে শিখুন</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-6">
+                    <a class="btn px-8 text-base">কোর্স লিস্ট</a>
+                    <a class="btn px-12 bg-[#ffc000] text-base">লগইন<img width="20" height="20"
+                            src="https://img.icons8.com/ios-glyphs/30/arrow.png" alt="arrow" /></a>
+                </div>
+            </div>
+        </nav>
+        <div class="h-[500px] bg-base-200 rounded-2xl w-full p-8">
+            <div class="flex flex-col lg:flex-row-reverse items-center w-full h-full  justify-between">
+                <img src="./images/2024-02-18T10-44-42.948Z-2dsdss.webp"
+                    class="w-1/2 h-full rounded-2xl shadow-2xl object-cover" />
+                <div>
+                    <h1 class="text-5xl font-bold flex gap-2 items-center">বাংলাদেশ শিখবে লাইভে <img class="w-10 h-10"
+                            src="./images/Red_circle.gif" alt=""></h1>
+                    <p class="py-6 text-xl font-semibold">স্কিল শেখার মাধ্যমে বদলে ফেলুন নিজের ভবিষ্যৎ</p>
+                    <button class="btn btn-primary btn-wide bg-ostadPrimary text-black border-none">ফ্রিতে শিখুন<img
+                            width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/arrow.png"
+                            alt="arrow" /></button>
+                    <p class="py-6 text-xl font-semibold">৭০০০+ গ্র্যাজুয়েটরা কর্মরত আছেন বিভিন্ন দেশি ও বিদেশি
+                        প্রতিষ্ঠানে:</p>
+
+                    <div class="flex flex-col gap-4">
+                        <div class="flex gap-12 items-center grayscale">
+                            <img class="hover:scale-150 transition-all duration-500" src="./images/icons8-google-48.png"
+                                class="" alt="">
+                            <img class="hover:scale-150 transition-all duration-500" src="./images/icons8-meta-48.png"
+                                alt="">
+                            <img class="hover:scale-150 transition-all duration-500"
+                                src="./images/icons8-microsoft-48.png" alt="">
+                            <img class="hover:scale-150 transition-all duration-500" src="./images/icons8-baidu-48.png"
+                                alt="">
+                        </div>
+                        <div class="flex gap-12 items-center justify-end grayscale">
+                            <img class="hover:scale-150 transition-all duration-500" src="./images/icons8-amazon-48.png"
+                                alt="">
+                            <img class="hover:scale-150 transition-all duration-500" src="./images/icons8-ibm-48.png"
+                                alt="">
+                            <img class="hover:scale-150 transition-all duration-500" src="./images/icons8-hp-48.png"
+                                alt="">
+                            <img class="hover:scale-150 transition-all duration-500" src="./images/icons8-iveco-64.png"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container mx-auto mt-20">
+            <div class="bg-white rounded-2xl p-6">
+                <p class="py-6 text-4xl text-center font-black">আমাদের কোর্সসমুহ</p>
+                <hr class="border-dashed">
+                <div class="py-5">
+                    <div class="grid grid-cols-4 gap-6">
+                        <div class="card bg-base-100 shadow-xl">
+                            <figure><img src="./images/1.jpg" alt="Shoes" /></figure>
+                            <div class="w-full flex justify-center gap-4 p-2">
+                                <button class="btn">
+                                    ব্যাচ ৩
+                                </button>
+                                <button class="btn"> ৩৫ সিট বাকি</button>
+                                <button class="btn"><span><img src="./images/icons8-time-24.png" alt=""
+                                            srcset=""></span>৫
+                                    দিন বাকি</button>
+                            </div>
+                            <hr>
+                            <div class="card-body p-4 space-y-5">
+                                <h2 class="text-2xl font-semibold">Web Development with PHP & Laravel</h2>
+                                <div class="card-actions justify-end">
+                                    <button
+                                        class="btn btn-primary btn-wide bg-ostadPrimary text-black border-none">বিস্তারিত
+                                        দেখি<img width="20" height="20"
+                                            src="https://img.icons8.com/ios-glyphs/30/arrow.png" alt="arrow" /></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 shadow-xl">
+                            <figure><img src="./images/2.jpg" alt="Shoes" /></figure>
+                            <div class="w-full flex justify-center gap-4 p-2">
+                                <button class="btn">
+                                    ব্যাচ ৩
+                                </button>
+                                <button class="btn"> ৩৫ সিট বাকি</button>
+                                <button class="btn"><span><img src="./images/icons8-time-24.png" alt=""
+                                            srcset=""></span>৫
+                                    দিন বাকি</button>
+                            </div>
+                            <hr>
+                            <div class="card-body p-4 space-y-5">
+                                <h2 class="text-2xl font-semibold">Web Development with PHP & Laravel</h2>
+                                <div class="card-actions justify-end">
+                                    <button
+                                        class="btn btn-primary btn-wide bg-ostadPrimary text-black border-none">বিস্তারিত
+                                        দেখি<img width="20" height="20"
+                                            src="https://img.icons8.com/ios-glyphs/30/arrow.png" alt="arrow" /></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 shadow-xl">
+                            <figure><img src="./images/3.jpg" alt="Shoes" /></figure>
+                            <div class="w-full flex justify-center gap-4 p-2">
+                                <button class="btn">
+                                    ব্যাচ ৩
+                                </button>
+                                <button class="btn"> ৩৫ সিট বাকি</button>
+                                <button class="btn"><span><img src="./images/icons8-time-24.png" alt=""
+                                            srcset=""></span>৫
+                                    দিন বাকি</button>
+                            </div>
+                            <hr>
+                            <div class="card-body p-4 space-y-5">
+                                <h2 class="text-2xl font-semibold">Web Development with PHP & Laravel</h2>
+                                <div class="card-actions justify-end">
+                                    <button
+                                        class="btn btn-primary btn-wide bg-ostadPrimary text-black border-none">বিস্তারিত
+                                        দেখি<img width="20" height="20"
+                                            src="https://img.icons8.com/ios-glyphs/30/arrow.png" alt="arrow" /></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 shadow-xl">
+                            <figure><img src="./images/4.jpg" alt="Shoes" /></figure>
+                            <div class="w-full flex justify-center gap-4 p-2">
+                                <button class="btn">
+                                    ব্যাচ ৩
+                                </button>
+                                <button class="btn"> ৩৫ সিট বাকি</button>
+                                <button class="btn"><span><img src="./images/icons8-time-24.png" alt=""
+                                            srcset=""></span>৫
+                                    দিন বাকি</button>
+                            </div>
+                            <hr>
+                            <div class="card-body p-4 space-y-5">
+                                <h2 class="text-2xl font-semibold">Web Development with PHP & Laravel</h2>
+                                <div class="card-actions justify-end">
+                                    <button
+                                        class="btn btn-primary btn-wide bg-ostadPrimary text-black border-none">বিস্তারিত
+                                        দেখি<img width="20" height="20"
+                                            src="https://img.icons8.com/ios-glyphs/30/arrow.png" alt="arrow" /></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 shadow-xl">
+                            <figure><img src="./images/5.jpg" alt="Shoes" /></figure>
+                            <div class="w-full flex justify-center gap-4 p-2">
+                                <button class="btn">
+                                    ব্যাচ ৩
+                                </button>
+                                <button class="btn"> ৩৫ সিট বাকি</button>
+                                <button class="btn"><span><img src="./images/icons8-time-24.png" alt=""
+                                            srcset=""></span>৫
+                                    দিন বাকি</button>
+                            </div>
+                            <hr>
+                            <div class="card-body p-4 space-y-5">
+                                <h2 class="text-2xl font-semibold">Web Development with PHP & Laravel</h2>
+                                <div class="card-actions justify-end">
+                                    <button
+                                        class="btn btn-primary btn-wide bg-ostadPrimary text-black border-none">বিস্তারিত
+                                        দেখি<img width="20" height="20"
+                                            src="https://img.icons8.com/ios-glyphs/30/arrow.png" alt="arrow" /></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 shadow-xl">
+                            <figure><img src="./images/6.jpg" alt="Shoes" /></figure>
+                            <div class="w-full flex justify-center gap-4 p-2">
+                                <button class="btn">
+                                    ব্যাচ ৩
+                                </button>
+                                <button class="btn"> ৩৫ সিট বাকি</button>
+                                <button class="btn"><span><img src="./images/icons8-time-24.png" alt=""
+                                            srcset=""></span>৫
+                                    দিন বাকি</button>
+                            </div>
+                            <hr>
+                            <div class="card-body p-4 space-y-5">
+                                <h2 class="text-2xl font-semibold">Web Development with PHP & Laravel</h2>
+                                <div class="card-actions justify-end">
+                                    <button
+                                        class="btn btn-primary btn-wide bg-ostadPrimary text-black border-none">বিস্তারিত
+                                        দেখি<img width="20" height="20"
+                                            src="https://img.icons8.com/ios-glyphs/30/arrow.png" alt="arrow" /></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 shadow-xl">
+                            <figure><img src="./images/7.jpg" alt="Shoes" /></figure>
+                            <div class="w-full flex justify-center gap-4 p-2">
+                                <button class="btn">
+                                    ব্যাচ ৩
+                                </button>
+                                <button class="btn">৩৫ সিট বাকি</button>
+                                <button class="btn"><span><img src="./images/icons8-time-24.png" alt=""
+                                            srcset=""></span>৫
+                                    দিন বাকি</button>
+                            </div>
+                            <hr>
+                            <div class="card-body p-4 space-y-5">
+                                <h2 class="text-2xl font-semibold">Web Development with PHP & Laravel</h2>
+                                <div class="card-actions justify-end">
+                                    <button
+                                        class="btn btn-primary btn-wide bg-ostadPrimary text-black border-none">বিস্তারিত
+                                        দেখি<img width="20" height="20"
+                                            src="https://img.icons8.com/ios-glyphs/30/arrow.png" alt="arrow" /></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card w-full bg-base-100 shadow-xl">
+                            <figure><img src="./images/8.jpg" alt="Shoes" /></figure>
+                            <div class="w-full flex justify-center gap-4 p-2">
+                                <button class="btn">
+                                    ব্যাচ ৩
+                                </button>
+                                <button class="btn">৩৫ সিট বাকি</button>
+                                <button class="btn"><span><img src="./images/icons8-time-24.png" alt=""
+                                            srcset=""></span>৫
+                                    দিন বাকি</button>
+                            </div>
+                            <hr>
+                            <div class="card-body p-4 space-y-5">
+                                <h2 class="text-2xl font-semibold">Web Development with PHP & Laravel</h2>
+                                <div class="card-actions justify-end">
+                                    <button
+                                        class="btn btn-primary btn-wide bg-ostadPrimary text-black border-none">বিস্তারিত
+                                        দেখি<img width="20" height="20"
+                                            src="https://img.icons8.com/ios-glyphs/30/arrow.png" alt="arrow" /></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full flex justify-center">
+                    <button class="btn w-96">সব দেখুন<img width="20" height="20"
+                            src="https://img.icons8.com/ios-glyphs/30/arrow.png" alt="arrow" /></button>
+                </div>
+            </div>
+            <div class="bg-[url('./images/hx2.jpg')] bg-cover h-auto rounded-2xl mt-8 p-8 w-full ">
+                <div class="flex items-center justify-around text-white gap-8">
+                    <div>
+                        <img src="./images/banner1.webp" alt="">
+                    </div>
+                    <div class="space-y-6">
+                        <h1 class="text-5xl font-bold">ফ্রি-তে শিখুন</h1>
+                        <p class="text-xl">স্কিল ডেভেলপমেন্ট এখন অনেক সহজ, একদম ফ্রি। জয়েন করুন ৮ টি ভিন্ন ক্যাটাগরিতে
+                            ৪০ টি
+                            স্কিলের ওপর
+                            অসংখ্য লাইভ ওয়েবিনার, লাইভ কোর্স এবং রেকর্ডেড কোর্সসমুহতে।</p>
+                        <button class="btn btn-primary px-14 bg-ostadPrimary text-black border-none">ফ্রিতে
+                            শিখুন<img width="24" height="24" src="https://img.icons8.com/material/24/forward--v1.png"
+                                alt="forward--v1" /></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[url('./images/header-bg.jpg')] h-full mt-8 py-8 bg-cover">
+            <div class="container mx-auto w-full">
+                <div class="flex justify-center">
+                    <div
+                        class="text-white text-center py-8 space-y-3  bg-gradient-to-b from-gray-800 to-gray-950 w-1/2 rounded-t-[55px]">
+                        <h1 class="text-4xl font-bold">ক্যারিয়ার গোল সেট করুন</h1>
+                        <p class="text-xl">নিচের অপশন গুলো থেকে আপনার গোল সিলেক্ট করে শেখা শুরু করুন</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="grid grid-cols-4 gap-6">
+                        <div class="card bg-base-100 shadow-xl">
+                            <div class="card-body">
+                                <div class="flex flex-col items-center justify-center gap-4">
+                                    <div>
+                                        <img width="24" height="24"
+                                            src="https://img.icons8.com/material/24/google-code.png"
+                                            alt="google-code" />
+                                    </div>
+                                    <h2 class="card-title">Web & App Development</h2>
+                                    <div class="flex gap-5 text-gray-600 font-medium font-hind">
+                                        <span>• ২৯ টি কোর্স</span>
+                                        <span>• ৫ টি ওয়ার্কশপ</span>
+                                    </div>
+                                    <div class="card-actions w-full">
+                                        <button class="btn bg-[#1d2939] text-white w-full">VIEW COURSES<img width="24"
+                                                height="24"
+                                                src="https://img.icons8.com/material/24/FFFFFF/forward--v1.png"
+                                                alt="forward--v1" /></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 shadow-xl">
+                            <div class="card-body">
+                                <div class="flex flex-col items-center justify-center gap-4">
+                                    <div>
+                                        <img width="24" height="24"
+                                            src="https://img.icons8.com/material/24/bell--v1.png" alt="bell--v1" />
+                                    </div>
+                                    <h2 class="card-title">Product Management & Design</h2>
+                                    <div class="flex gap-5 text-gray-600 font-medium font-hind">
+                                        <span>• ১০ টি কোর্স</span>
+                                        <span>• ৩ টি ওয়ার্কশপ</span>
+                                    </div>
+                                    <div class="card-actions w-full">
+                                        <button class="btn bg-[#1d2939] text-white w-full">VIEW COURSES<img width="24"
+                                                height="24"
+                                                src="https://img.icons8.com/material/24/FFFFFF/forward--v1.png"
+                                                alt="forward--v1" /></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 shadow-xl">
+                            <div class="card-body">
+                                <div class="flex flex-col items-center justify-center gap-4">
+                                    <div>
+                                        <img width="24" height="24"
+                                            src="https://img.icons8.com/material/24/suitcase.png" alt="suitcase" />
+                                    </div>
+                                    <h2 class="card-title">Business & Marketing</h2>
+                                    <div class="flex gap-5 text-gray-600 font-medium font-hind">
+                                        <span>• ৬ টি কোর্স</span>
+                                    </div>
+                                    <div class="card-actions w-full">
+                                        <button class="btn bg-[#1d2939] text-white w-full">VIEW COURSES<img width="24"
+                                                height="24"
+                                                src="https://img.icons8.com/material/24/FFFFFF/forward--v1.png"
+                                                alt="forward--v1" /></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 shadow-xl">
+                            <div class="card-body">
+                                <div class="flex flex-col items-center justify-center gap-4">
+                                    <div>
+                                        <img width="24" height="24"
+                                            src="https://img.icons8.com/material/24/bar-chart--v2.png"
+                                            alt="bar-chart--v2" />
+                                    </div>
+                                    <h2 class="card-title">Data Engineering</h2>
+                                    <div class="flex gap-5 text-gray-600 font-medium font-hind">
+                                        <span>• ৫ টি কোর্স</span>
+                                        <span>• ১ টি ওয়ার্কশপ</span>
+                                    </div>
+                                    <div class="card-actions w-full">
+                                        <button class="btn bg-[#1d2939] text-white w-full">VIEW COURSES<img width="24"
+                                                height="24"
+                                                src="https://img.icons8.com/material/24/FFFFFF/forward--v1.png"
+                                                alt="forward--v1" /></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 shadow-xl">
+                            <div class="card-body">
+                                <div class="flex flex-col items-center justify-center gap-4">
+                                    <div>
+                                        <img width="24" height="24"
+                                            src="https://img.icons8.com/material-outlined/24/art-prices--v2.png"
+                                            alt="art-prices--v2" />
+                                    </div>
+                                    <h2 class="card-title">Creatives</h2>
+                                    <div class="flex gap-5 text-gray-600 font-medium font-hind">
+                                        <span>• ৪ টি কোর্স</span>
+                                        <span>• ২ টি ওয়ার্কশপ</span>
+                                    </div>
+                                    <div class="card-actions w-full">
+                                        <button class="btn bg-[#1d2939] text-white w-full">VIEW COURSES<img width="24"
+                                                height="24"
+                                                src="https://img.icons8.com/material/24/FFFFFF/forward--v1.png"
+                                                alt="forward--v1" /></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 shadow-xl">
+                            <div class="card-body">
+                                <div class="flex flex-col items-center justify-center gap-4">
+                                    <div>
+                                        <img width="24" height="24"
+                                            src="https://img.icons8.com/material-two-tone/24/blockchain-technology.png"
+                                            alt="blockchain-technology" />
+                                    </div>
+                                    <h2 class="card-title">Blockchain Development</h2>
+                                    <div class="flex gap-5 text-gray-600 font-medium font-hind">
+                                        <span>• ১ টি কোর্স</span>
+                                        <span>• ১ টি ওয়ার্কশপ</span>
+                                    </div>
+                                    <div class="card-actions w-full">
+                                        <button class="btn bg-[#1d2939] text-white w-full">VIEW COURSES<img width="24"
+                                                height="24"
+                                                src="https://img.icons8.com/material/24/FFFFFF/forward--v1.png"
+                                                alt="forward--v1" /></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 shadow-xl">
+                            <div class="card-body">
+                                <div class="flex flex-col items-center justify-center gap-4">
+                                    <div>
+                                        <img width="24" height="24"
+                                            src="https://img.icons8.com/material-outlined/24/graduation-cap--v1.png"
+                                            alt="graduation-cap--v1" />
+                                    </div>
+                                    <h2 class="card-title">IELTS Preparation</h2>
+                                    <div class="flex gap-5 text-gray-600 font-medium font-hind">
+                                        <span>• ৫ টি কোর্স</span>
+                                        <span>• ১ টি ওয়ার্কশপ</span>
+                                    </div>
+                                    <div class="card-actions w-full">
+                                        <button class="btn bg-[#1d2939] text-white w-full">VIEW COURSES<img width="24"
+                                                height="24"
+                                                src="https://img.icons8.com/material/24/FFFFFF/forward--v1.png"
+                                                alt="forward--v1" /></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 shadow-xl">
+                            <div class="card-body">
+                                <div class="flex flex-col items-center justify-center gap-4">
+                                    <div>
+                                        <img width="24" height="24"
+                                            src="https://img.icons8.com/material-outlined/24/security-checked.png"
+                                            alt="security-checked" />
+                                    </div>
+                                    <h2 class="card-title">Cyber Security</h2>
+                                    <div class="flex gap-5 text-gray-600 font-medium font-hind">
+                                        <span>• ২ টি কোর্স</span>
+                                    </div>
+                                    <div class="card-actions w-full">
+                                        <button class="btn bg-[#1d2939] text-white w-full">VIEW COURSES<img width="24"
+                                                height="24"
+                                                src="https://img.icons8.com/material/24/FFFFFF/forward--v1.png"
+                                                alt="forward--v1" /></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="container mx-auto">
+            <div class="mt-12">
+                <h1 class="text-center text-4xl font-semibold">কি কি পাচ্ছেন লাইভ কোর্সে</h1>
+                <h3 class="text-2xl text-center font-semibold text-gray-600">দেখে নিন কি কি পাচ্ছেন ওস্তাদের লাইভ কোর্সে
+                    জয়েন করলে</h3>
+            </div>
+            <div>
+                <div class="grid grid-cols-3 gap-8 mt-12">
+                    <div class="card border-[1px] border-gray-400 rounded-xl">
+                        <div class="card-body py-12">
+                            <div class="flex flex-col items-center justify-center text-center gap-3">
+                                <img class="w-[80px]" src="./images/2023-09-26T07-03-07.734Z-icon-1.png" alt=""
+                                    srcset="">
+                                <h2 class="card-title">ইন্ডাস্ট্রি ফোকাসড লাইভ কোর্সেস</h2>
+                                <p>জয়েন করুন গাইডলাইন সমৃদ্ধ ইন্ডাস্ট্রি ফোকাসড লাইভ কোর্সে, শুরু করুন আপনার ক্যারিয়ারের
+                                    জার্নি।</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-[1px] border-gray-400 rounded-xl">
+                        <div class="card-body py-12">
+                            <div class="flex flex-col items-center justify-center text-center gap-3">
+                                <img class="w-[80px]" src="./images/2023-09-26T07-03-27.927Z-icon-2.png" alt=""
+                                    srcset="">
+                                <h2 class="card-title">ইন্ডাস্ট্রি ফোকাসড লাইভ কোর্সেস</h2>
+                                <p>ইন্ডাস্ট্রি এক্সপার্টদের সাথে নিয়মিত লাইভ ক্লাস, কনসেপচুয়াল ক্লাস আর সাপোর্ট ক্লাসে
+                                    স্কিল ডেভেলপমেন্ট এখন হবে একদম পরিপুর্ন। </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-[1px] border-gray-400 rounded-xl">
+                        <div class="card-body py-12">
+                            <div class="flex flex-col items-center justify-center text-center gap-3">
+                                <img class="w-[80px]" src="./images/2023-09-26T07-03-45.997Z-icon-3.png" alt=""
+                                    srcset="">
+                                <h2 class="card-title">ইন্ডাস্ট্রি ফোকাসড লাইভ কোর্সেস</h2>
+                                <p>কুইজ, এসাইনমেন্ট আর লাইভ এক্সাম দিয়ে সাজানো মডিউলভিত্তিক গোছানো স্টাডিপ্ল্যানের সাথে
+                                    ছিটকে পড়ার কোনো চান্সই নেই।</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-[1px] border-gray-400 rounded-xl">
+                        <div class="card-body py-12">
+                            <div class="flex flex-col items-center justify-center text-center gap-3">
+                                <img class="w-[80px]" src="./images/2023-09-26T07-04-03.737Z-icon-4.png" alt=""
+                                    srcset="">
+                                <h2 class="card-title">ইন্ডাস্ট্রি ফোকাসড লাইভ কোর্সেস</h2>
+                                <p>ট্র্যাক করুন আপনার প্রোগ্রেস রিয়েল টাইম, দেখে নিন লিডার বোর্ডে আপনার পজিশন আর
+                                    কম্পিটিশনে এগিয়ে যান সবার থেকে।</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-[1px] border-gray-400 rounded-xl">
+                        <div class="card-body py-12">
+                            <div class="flex flex-col items-center justify-center text-center gap-3">
+                                <img class="w-[80px]" src="./images/2023-09-26T07-04-21.951Z-icon-5.png" alt=""
+                                    srcset="">
+                                <h2 class="card-title">ইন্ডাস্ট্রি ফোকাসড লাইভ কোর্সেস</h2>
+                                <p>স্কিল ডেভেলপ করুন ইন্ডাস্ট্রির সেরা এক্সপার্টদের সাথে, প্রশ্ন করুন আর শিখে নিন
+                                    সরাসরি, লাইভে। </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-[1px] border-gray-400 rounded-xl">
+                        <div class="card-body py-12">
+                            <div class="flex flex-col items-center justify-center text-center gap-3">
+                                <img class="w-[80px]" src="./images/2023-09-26T07-04-44.253Z-icon-6.png" alt=""
+                                    srcset="">
+                                <h2 class="card-title">ইন্ডাস্ট্রি ফোকাসড লাইভ কোর্সেস</h2>
+                                <p>কোর্স কমপ্লিটে পাচ্ছেন জব প্লেসমেন্ট টিমের থেকে লাইফটাইম সিভি, প্রোফাইল বিল্ড এবং জব
+                                    এপ্লিকেশনসহ ইন্টেন্সিভ জব প্লেসমেন্ট সাপোর্ট। </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- code khala -->
+            <div class="mt-28">
+                <div class="grid grid-cols-2 gap-8">
+                    <div
+                        class="card border-[1px] border-gray-400 rounded-xl bg-gradient-to-r from-orange-50 to-gray-50">
+                        <div class="card-body">
+                            <div class="space-y-5 flex flex-col items-center justify-center">
+                                <h1 class="text-4xl leading-[50px] px-44 text-center font-bold">আপনার কোডীং নলেজ
+                                    এক্সপ্লোর করুন CodeKhala - র
+                                    সাথে</h1>
+                                <p class="font-semibold px-20 text-xl text-center">কোড করুন C, C++, Javascript, PHP সহ
+                                    মোট ৭
+                                    টি ল্যাঙ্গুয়েজে, প্রবলেম সলভ করুন Codemama Play
+                                    Ground - এ, আর জায়গা করে নিন লিডারবোর্ডে </p>
+                                <button class="btn bg-[#1d2939] text-white btn-wide">VIEW COURSES<img width="24"
+                                        height="24" src="https://img.icons8.com/material/24/FFFFFF/forward--v1.png"
+                                        alt="forward--v1" /></button>
+                            </div>
+                            <div class="w-full mt-8">
+                                <img class="w-full h-[600px] rounded-2xl border-[1px] border-gray-400 "
+                                    src="./images/2023-09-24T10-51-25.393Z-codemama-img.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="card border-[1px] border-gray-400 rounded-xl bg-gradient-to-r from-orange-50 to-gray-50">
+                        <div class="card-body">
+                            <div class="space-y-5 flex flex-col items-center justify-center">
+                                <h1 class="text-4xl leading-[50px] px-44 text-center font-bold">স্কিল টেস্ট করুন
+                                    Skillable - এ পেয়ে যান ফ্রি
+                                    সার্টিফিকেট</h1>
+                                <p class="font-semibold px-20 text-xl text-center">টেস্ট দিন Development, Graphic &
+                                    UI/UX এর মত
+                                    ২০০+ এসেসমেন্ট থেকে চলে যান ট্যালেন্ট পুলে
+                                    আর
+                                    পেয়ে যান ইন্ডাস্ট্রি এক্সপার্ট সার্টিফিকেট</p>
+                                <button class="btn bg-[#1d2939] text-white btn-wide">VIEW COURSES<img width="24"
+                                        height="24" src="https://img.icons8.com/material/24/FFFFFF/forward--v1.png"
+                                        alt="forward--v1" /></button>
+                            </div>
+                            <div class="w-full mt-8">
+                                <img class="rounded-2xl h-[600px] border-[1px] border-gray-400"
+                                    src="./images/2023-09-24T10-52-11.735Z-skillable-img.webp" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- business -->
+            <div class="mt-40 h-[500px] bg-base-200 rounded-2xl w-full p-8">
+                <div class="flex flex-col gap-16 lg:flex-row-reverse items-center w-full h-full  justify-between">
+                    <img src="./images/2023-09-24T10-13-43.174Z-bg-business.webp"
+                        class="w-1/2 h-full rounded-2xl shadow-2xl object-cover" />
+                    <div>
+                        <h1 class="text-5xl font-bold flex gap-2 items-center">ব্যাবসার জন্য গুরু লার্নিং</h1>
+                        <p class="py-6 text-xl font-semibold">জয়েন করুন আমাদের কর্পোরেট স্কিলস ট্রেইনিং প্রোগ্রামে,
+                            ট্রেইনিং নিন দেশ সেরা ইন্ডাস্ট্রি এক্সপার্টদের থেকে আর সাজিয়ে নিন আপনার টিমকে নতুনভাবে</p>
+                        <button class="btn btn-primary btn-wide bg-ostadPrimary text-black border-none">বিস্তারিত
+                            দেখি<img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/arrow.png"
+                                alt="arrow" /></button>
+                        <p class="pt-6 text-xl font-semibold">আমাদের পার্টনার সমূহ</p>
+                        <div class="flex flex-col gap-4">
+                            <div class="flex gap-12 items-center grayscale">
+                                <img class="hover:scale-150 w-[150px] transition-all duration-500"
+                                    src="./images/logo.png" class="" alt="">
+                                <img class="hover:scale-150 w-[150px] transition-all duration-500"
+                                    src="./images/asa_logo5.png" alt="">
+                                <img class="hover:scale-150  w-[150px] transition-all duration-500"
+                                    src="./images/Logo_UNESCO_2021.svg.png" alt="">
+                                <img class="hover:scale-150 transition-all duration-500 grayscale"
+                                    src="./images/icons8-iveco-64.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- statistics -->
+        <div class="container mx-auto">
+            <div class="mt-32 bg-[#ffeee4] rounded-2xl border-[1px] p-8 border-[#ff8c4b]">
+                <div class="flex justify-between">
+                    <div class="text-center space-y-3">
+                        <h1 class="text-3xl font-bold text-green-600">২০০০+</h1>
+                        <p class="text-base text-gray-500 font-medium">জব প্লেসমেন্ট</p>
+                    </div>
+                    <div class="text-center  space-y-3">
+                        <h1 class="text-3xl font-bold text-blue-500">৭০০০+</h1>
+                        <p class="text-base text-gray-500 font-medium">স্টুডেন্ট</p>
+                    </div>
+                    <div class="text-center space-y-3">
+                        <h1 class="text-3xl font-bold text-orange-400">৯০%</h1>
+                        <p class="text-base text-gray-500 font-medium">কমপ্লিশন রেট</p>
+                    </div>
+                    <div class="text-center space-y-3">
+                        <h1 class="text-3xl font-bold text-orange-600">২৮</h1>
+                        <p class="text-base text-gray-500 font-medium">লাইভ কোর্স</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-24 text-center space-y-4">
+            <h1 class="text-4xl font-bold">দেখে নিন কি বলছেন গুরু গ্র্যাজুয়েটরা</h1>
+            <p class="text-xl">এক নজরে দেখে নিন কি বলছেন গুরু গ্র্যাজুয়েটরা</p>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
